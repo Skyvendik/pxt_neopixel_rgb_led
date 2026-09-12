@@ -100,7 +100,7 @@ namespace neopixelRgbLed {
 
     /** Set brightness for the selected device. Use 0 to 255. */
     //% blockId=neopixel_rgb_led_brightness
-    //% block="NeoPixel %target jas %brightness"
+    //% block="nastavit jas %target na %brightness"
     //% brightness.min=0 brightness.max=255 brightness.defl=80
     //% group="Nastavení"
     //% weight=80
@@ -108,6 +108,17 @@ namespace neopixelRgbLed {
         let strip = getTarget(target)
         if (!strip) return
         strip.setBrightness(clampInt(brightness, 0, 255))
+        strip.show()
+    }
+
+    /** Set brightness of the 8 LED NeoPixel ring. Use 0 to 255. */
+    //% blockId=neopixel_rgb_led_ring8_brightness
+    //% block="nastavit jas NeoPixel kruhu 8 LED na %brightness"
+    //% brightness.min=0 brightness.max=255 brightness.defl=80
+    //% group="Nastavení"
+    //% weight=79
+    export function setRing8Brightness(brightness: number): void {
+        setBrightness(Target.Ring8, brightness)
     }
 
     /** Return the number of LEDs configured for the selected device. */
