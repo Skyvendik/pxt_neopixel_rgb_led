@@ -6,6 +6,9 @@ MakeCode rozšíření pro BBC micro:bit, které zjednodušuje ovládání:
 - kruhového NeoPixel modulu s 8 LED,
 - NeoPixel pásku s uživatelsky nastaveným počtem LED.
 
+Jas lze nastavit v rozsahu `0` až `255`. Pro 8LED kruh je připravený samostatný
+blok **nastavit jas NeoPixel kruhu 8 LED na ...**; hodnota `0` LED zhasne.
+
 Rozšíření používá oficiální ovladač `microsoft/pxt-neopixel` a přidává hotové
 české bloky pro běžné světelné efekty.
 
