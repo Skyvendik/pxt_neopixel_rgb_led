@@ -1,0 +1,21 @@
+{
+    "name": "pxt_neopixel_rgb_led",
+    "version": "0.1.0",
+    "description": "Easy MakeCode control of one NeoPixel RGB LED, an 8 LED ring, and LED strips with ready-made effects.",
+    "license": "MIT",
+    "dependencies": {
+        "core": "*",
+        "neopixel": "github:microsoft/pxt-neopixel"
+    },
+    "files": [
+        "main.ts",
+        "README.md"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "public": true,
+    "supportedTargets": [
+        "microbit"
+    ]
+}
